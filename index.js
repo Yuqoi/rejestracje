@@ -29,23 +29,17 @@ function wylosujRejestrace() {
             const dane = data
             rightObj = randomProperty(dane)
             wrongObj = getWrongProperties(dane, rightObj)
-            
-            console.log(rightObj)
-            console.log(wrongObj)
             rejestracjaNazwa.innerHTML = rightObj.key
-            
+
             const prawidlowyIndex = Math.floor(Math.random() * 4)
             punkty[prawidlowyIndex].innerHTML = rightObj.value
-            
+
             const emptyListItems = Array.from(document.querySelectorAll('li')).filter(li => !li.textContent.trim());
 
             for (let i = 0; i < emptyListItems.length; i++) {
                 const element = emptyListItems[i];
                 element.innerHTML = wrongObj[i].value
             }
-            
-            console.log(rightObj.value)
-        
         })
 }
 
