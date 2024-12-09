@@ -16,14 +16,26 @@ body{
 }
 .rejestracja h4{
     color: #2c2c2c;
-    font-size: 38px;
-    left: 10vb;
+    font-size: 18px;
+    left: 25%;
     margin: 0;
     padding: 0;
 }
 
 li{
-    list-style-type:disc;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
 }
+
+.row{
+    height: 100px;
+    cursor: pointer;
+}
+
+.zly{
+    color: rgb(201, 32, 32);
+}
+.dobry{
+    color: rgb(21, 211, 21);
+}
+
